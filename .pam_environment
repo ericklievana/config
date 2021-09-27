@@ -1,0 +1,22 @@
+#Base Dirs
+XDG_CONFIG_HOME     OVERRIDE=@{HOME}/.config
+XDG_CACHE_HOME      OVERRIDE=@{HOME}/.local/cache
+XDG_DATA_HOME       OVERRIDE=@{HOME}/.local/share
+XDG_RUNTIME_DIR     OVERRIDE=@{HOME}/.local/runtime
+PATH                OVERRIDE=${PATH}:@{HOME}/.local/scripts
+
+#Change file location
+HISTFILE            OVERRIDE=${XDG_DATA_HOME}/bash/history
+XINITRC             OVERRIDE=${XDG_CONFIG_HOME}/x11/xinitrc
+XDG_DIRNAME_DIR     OVERRIDE=${$XDG_CONFIG_HOME}/
+GTK2_RC_FILES       OVERRIDE=${XDG_CONFIG_HOME}/gtk-2/gtkrc
+LESSKEY             OVERRIDE=${XDG_CONFIG_HOME}/less/lesskey
+LESSHISTFILE        OVERRIDE=${XDG_CACHE_HOME}/less/history
+XAUTHORITY          OVERRIDE=${XDG_CONFIG_HOME}/x11/Xauthority
+XSERVERRC           OVERRIDE=${XDG_CONFIG_HOME}/x11/xserverrc
+INPUTRC             OVERRIDE=${XDG_CONFIG_HOME}/readline/inputrc
+
+#Default Apps
+EDITOR      OVERRIDE=nvim
+TERMINAL    OVERRIDE=st
+BROWSER     OVERRIDE=firefox
