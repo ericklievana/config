@@ -1,0 +1,34 @@
+!Fonts
+!*.font: Liberation Mono:size=15
+*.font: Iosevka:size=15
+
+!Colors
+*.background:     #2c2e34
+*.foreground:     #e2e2e3
+*.cursorColor:    #e2e2e3
+*.selbackground:  #e2e2e3
+*.selforeground:  #2c2e34
+!!Black
+*.color0:   #181819
+*.color8:   #181819
+!!Red
+*.color1:   #fc5d7c
+*.color9:   #fc5d7c
+!!Green
+*.color2:   #9ed072
+*.color10:  #9ed072
+!!Yellow
+*.color3:   #e7c664
+*.color11:  #e7c664
+!!Blue
+*.color4:   #76cce0
+*.color12:  #76cce0
+!!Magenta
+*.color5:   #b39df3
+*.color13:  #b39df3
+!!Cyan
+*.color6:   #f39660
+*.color14:  #f39660
+!!White
+*.color7:   #e2e2e3
+*.color15:  #e2e2e3
