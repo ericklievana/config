@@ -1,1 +1,3 @@
-# README
+#Arch Linux dotfiles
+##Programs used
+###
