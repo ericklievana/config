@@ -81,6 +81,8 @@ set incsearch
 "Language
 set langmenu=es
 map <leader>s :setlocal spell! spelllang=es_mx<CR>
+nnoremap <leader>n [s
+nnoremap <leader>b ]s
 
 "No backup
 set nobackup
@@ -106,8 +108,8 @@ autocmd FileType tex nnoremap <buffer> <F2> :Latex<CR>
 autocmd FileType tex nnoremap <buffer> <F6> :Zathura<CR>
 
 "bettermovement
-nnoremap <Up> gk
-nnoremap <Down> gj
+nnoremap j gj
+nnoremap k gk
 
 "Split nav
 map <C-h> <C-w>h
