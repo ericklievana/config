@@ -1,6 +1,6 @@
 !Fonts
 !*.font: Liberation Mono:size=15
-*.font: Iosevka:size=15
+*.font: Iosevka:size=14
 
 !Colors
 *.background:     #2c2e34
