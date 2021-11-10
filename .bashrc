@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='\[$(tput bold)\]\[$(tput setaf 1)\] \h \[$(tput setaf 2)\] \u \[$(tput setaf 4)\] \W \[$(tput sgr0)\]'
+PS1='\[$(tput bold)\]\[$(tput setaf 1)\] \h \[$(tput setaf 2)\] \u \[$(tput setaf 4)\] \W \[$(tput sgr0)\]'
 
 #Infinite History
 HISTSIZE=
