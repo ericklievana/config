@@ -19,6 +19,9 @@ super + b
 ###Youtube
 super + p
     youtube.sh
+###
+super + m
+    calculator.sh
 
 ###Scrot
 Print
