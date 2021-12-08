@@ -6,8 +6,7 @@ wmname LG3D &
 redshift -P -O 4500k
 #bar.sh &
 
-bspc monitor HDMI-0 -d I II III IV V
-bspc monitor HDMI-1 -d VI VII VIII IX X
+bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
 
 bspc config border_width            5
 bspc config normal_border_color     \#2c2e34
