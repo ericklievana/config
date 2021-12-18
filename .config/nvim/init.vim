@@ -24,15 +24,17 @@ Plug 'sainnhe/sonokai'
 Plug 'tpope/vim-surround'
 
 "Markdown
-Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_math = 1
-let g:vim_markdown_no_extensions_in_markdown = 1
+"let g:vim_markdown_no_extensions_in_markdown = 1
 let g:vim_markdown_autowrite = 1
+let g:vim_markdown_folding_disabled = 1
 
 "Bullets
 Plug 'dkarter/bullets.vim'
 let g:bullets_enabled_file_types = ['markdown', 'text']
+let g:bullets_pad_right = 1
 
 "Goyo
 Plug 'junegunn/goyo.vim'
