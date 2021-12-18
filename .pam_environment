@@ -19,4 +19,4 @@ INPUTRC             OVERRIDE=${XDG_CONFIG_HOME}/readline/inputrc
 #Default Apps
 EDITOR      OVERRIDE=nvim
 TERMINAL    OVERRIDE=st
-BROWSER     OVERRIDE=firefox
+BROWSER     OVERRIDE=qutebrowser
