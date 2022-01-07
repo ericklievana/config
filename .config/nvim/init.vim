@@ -23,8 +23,18 @@ Plug 'sainnhe/sonokai'
 "Surround
 Plug 'tpope/vim-surround'
 
-"Markdown
+"Tabular
 Plug 'godlygeek/tabular'
+
+"Tablemode
+Plug 'dhruvasagar/vim-table-mode'
+let g:table_mode_corner='+'
+let g:table_mode_corner_corner='+'
+let g:table_mode_header_fillchar='='
+let g:table_mode_tableize_auto_border = 1
+let g:table_mode_auto_align = 0
+
+"Markdown
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_math = 1
 "let g:vim_markdown_no_extensions_in_markdown = 1
@@ -103,11 +113,18 @@ set ai
 set lbr
 set wrap
 
-"Latex
+"Commands
 command Latex execute "!pdflatex %"
+command PandocMD execute "!pandoc % -o $(echo %:r\".pdf\")"
 command Zathura execute "!zathura $(echo %:r\".pdf\")&disown"
+
+"Latex
 autocmd FileType tex nnoremap <buffer> <F2> :Latex<CR>
 autocmd FileType tex nnoremap <buffer> <F6> :Zathura<CR>
+
+"Markdown
+autocmd FileType markdown nnoremap <buffer> <F2> :PandocMD<CR>
+autocmd FileType markdown nnoremap <buffer> <F6> :Zathura<CR>
 
 "bettermovement
 nnoremap j gj
