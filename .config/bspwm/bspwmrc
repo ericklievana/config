@@ -3,6 +3,7 @@
 sxhkd &
 xwallpaper --maximize ~/pictures/wallpaper
 wmname LG3D &
+redshift -P -O 4500k
 #bar.sh &
 
 bspc monitor HDMI-0 -d I II III IV V
