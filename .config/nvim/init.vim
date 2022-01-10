@@ -115,7 +115,8 @@ set wrap
 
 "Commands
 command Latex execute "!pdflatex %"
-command PandocMD execute "!pandoc % -o $(echo %:r\".pdf\")"
+command MarkdownToBeamer execute "!pandoc % -t beamer -o $(echo %:r\".pdf\")"
+command MarkdownToPDF execute "!pandoc % -o $(echo %:r\".pdf\")"
 command Zathura execute "!zathura $(echo %:r\".pdf\")&disown"
 
 "Latex
@@ -123,7 +124,8 @@ autocmd FileType tex nnoremap <buffer> <F2> :Latex<CR>
 autocmd FileType tex nnoremap <buffer> <F6> :Zathura<CR>
 
 "Markdown
-autocmd FileType markdown nnoremap <buffer> <F2> :PandocMD<CR>
+autocmd FileType markdown nnoremap <buffer> <F2> :MarkdownToPDF<CR>
+autocmd FileType markdown nnoremap <buffer> <F3> :MarkdownToBeamer<CR>
 autocmd FileType markdown nnoremap <buffer> <F6> :Zathura<CR>
 
 "bettermovement
