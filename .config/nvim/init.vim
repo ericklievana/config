@@ -37,7 +37,6 @@ let g:table_mode_auto_align = 0
 "Markdown
 Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_math = 1
-"let g:vim_markdown_no_extensions_in_markdown = 1
 let g:vim_markdown_autowrite = 1
 let g:vim_markdown_folding_disabled = 1
 
@@ -116,7 +115,7 @@ set wrap
 "Commands
 command Latex execute "!pdflatex %"
 command MarkdownToBeamer execute "!pandoc % -t beamer -o $(echo %:r\".pdf\")"
-command MarkdownToPDF execute "!pandoc % -o $(echo %:r\".pdf\")"
+command MarkdownToPDF execute "!pandoc % -o $(echo %:r\".pdf\") --template uni"
 command Zathura execute "!zathura $(echo %:r\".pdf\")&disown"
 
 "Latex
