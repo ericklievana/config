@@ -1,8 +1,8 @@
 !Fonts
 !*.font: Liberation Mono:size=15
-!*.font: Iosevka:size=14
-*.font: JetBrains Mono:size=14
+*.font: Iosevka:size=14
+!*.font: JetBrains Mono:size=14
 
 !Colors
-#include "tender"
-!#include "sonokai"
+!#include "tender"
+#include "sonokai"

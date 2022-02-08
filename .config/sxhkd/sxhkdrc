@@ -40,7 +40,7 @@ control + super + Print
     scrot -o -f -ub '/tmp/image.png' && xclip -selection clipboard -t image/png -i /tmp/image.png
 
 control + alt + Print
-    scrot -o -f -s '/tmp/image.png' && xclip -selection clipboard -t image/png -i /tmp/image.png
+    scrot -o -s '/tmp/image.png' && xclip -selection clipboard -t image/png -i /tmp/image.png
 
 ###Shutdown, Reboot
 control + alt + {o,p}
@@ -97,8 +97,6 @@ super + space
     bspc node -t ~floating
 
 ###Change Focus
-super + {Left,Down,Up,Right}
-    bspc node -f {west,south,north,east}
 super + {h,j,k,l}
     bspc node -f {west,south,north,east}
 

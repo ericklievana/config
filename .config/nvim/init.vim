@@ -39,6 +39,7 @@ Plug 'plasticboy/vim-markdown'
 let g:vim_markdown_math = 1
 let g:vim_markdown_autowrite = 1
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal_code_blocks = 0
 
 "Bullets
 Plug 'dkarter/bullets.vim'
@@ -115,7 +116,7 @@ set wrap
 "Commands
 command Latex execute "!pdflatex %"
 command MarkdownToBeamer execute "!pandoc % -t beamer -o $(echo %:r\".pdf\")"
-command MarkdownToPDF execute "!pandoc % -o $(echo %:r\".pdf\") --template uni"
+command MarkdownToPDF execute "!pandoc % -o $(echo %:r\".pdf\")"
 command Zathura execute "!zathura $(echo %:r\".pdf\")&disown"
 
 "Latex
@@ -126,10 +127,6 @@ autocmd FileType tex nnoremap <buffer> <F6> :Zathura<CR>
 autocmd FileType markdown nnoremap <buffer> <F2> :MarkdownToPDF<CR>
 autocmd FileType markdown nnoremap <buffer> <F3> :MarkdownToBeamer<CR>
 autocmd FileType markdown nnoremap <buffer> <F6> :Zathura<CR>
-
-"bettermovement
-nnoremap j gj
-nnoremap k gk
 
 "Split nav
 map <C-h> <C-w>h
